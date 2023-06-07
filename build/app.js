@@ -21,7 +21,7 @@ function amrToMp3(filepath) {
             return;
         }
         var _outputName = outputName || filename;
-        var cmdStr = ffmpegPath + ' -y -i "' + path.normalize(filepath) + '" -acodec libmp3lame -ar 24000 -vol 500 -ab 128 "' + path.join(outputDir, _outputName + '.mp3') + '"';
+        var cmdStr = '"' + ffmpegPath + '" -y -i "' + path.normalize(filepath) + '" -acodec libmp3lame -ar 24000 -vol 500 -ab 128 "' + path.join(outputDir, _outputName + '.mp3') + '"';
         exec(cmdStr, function (err, stdout, stderr) {
             if (err) {
                 // console.log('error:' + stderr);

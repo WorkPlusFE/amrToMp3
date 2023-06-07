@@ -1,5 +1,8 @@
 {
-  "name": "amrToMp3",
+  "name": "@w6s/amr2mp3",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "2.0.0",
   "description": "",
   "main": "build/app.js",
